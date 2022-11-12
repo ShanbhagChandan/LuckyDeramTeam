@@ -1,0 +1,404 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .captainvicecaptain {
+        font-size: 12px;
+        padding: 5px;
+        font-weight: bold;
+        background: #14ff00;
+        color: #0d4e09;
+        box-shadow: 0px 2px 5px 0px #8ad36b;
+    }
+</style>
+
+
+<div class="text-center">
+    <div class="col-md-12">
+        <div class="card">
+            <h5 class="card-header">Team Players Selection</h5>
+        </div>
+        <table class="table table-bordered" id="contenttable">
+            <thead>
+                <tr>
+                    <th width="10%">Player No</th>
+                    <th width="20%">Team A</th>
+                    <th width="16%">Player Type A</th>
+                    <th width="9%">Team A Credits</th>
+                    <th width="20%">Team B</th>
+                    <th width="16%">Player Type B</th>
+                    <th width="9%">Team B Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Player 1</td>
+                    <td><input type="text" id="Player1_A_Name" class="form-control" /></td>
+                    <td>
+                        <select id="Player1_A_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player1_A_Credits" class="form-control" /></td>
+                    <td><input type="text" id="Player1_B_Name" class="form-control" /></td>
+                    <td>
+                        <select id="Player1_B_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player1_B_Credits" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td>Player 2</td>
+                    <td><input type="text" id="Player2_A_Name" class="form-control" /></td>
+                    <td>
+                        <Select id="Player2_A_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </Select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player2_A_Credits" class="form-control" /></td>
+                    <td><input type="text" id="Player2_B_Name" class="form-control" /></td>
+                    <td>
+                        <select id="Player2_B_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player2_B_Credits" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td>Player 3</td>
+                    <td><input type="text" id="Player3_A_Name" class="form-control" /></td>
+                    <td>
+                        <select id="Player3_A_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player3_A_Credits" class="form-control" /></td>
+                    <td><input type="text" id="Player3_B_Name" class="form-control" /></td>
+                    <td>
+                        <select id="Player3_B_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player3_B_Credits" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td>Player 4</td>
+                    <td><input type="text" id="Player4_A_Name" class="form-control" /></td>
+                    <td>
+                        <select id="Player4_A_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player4_A_Credits" class="form-control" /></td>
+                    <td><input type="text" id="Player4_B_Name" class="form-control" /></td>
+                    <td>
+                        <select id="Player4_B_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player4_B_Credits" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td>Player 5</td>
+                    <td><input type="text" id="Player5_A_Name" class="form-control" /></td>
+                    <td>
+                        <select id="Player5_A_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player5_A_Credits" class="form-control" /></td>
+                    <td><input type="text" id="Player5_B_Name" class="form-control" /></td>
+                    <td>
+                        <select id="Player5_B_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player5_B_Credits" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td>Player 6</td>
+                    <td><input type="text" id="Player6_A_Name" class="form-control" /></td>
+                    <td>
+                        <select id="Player6_A_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player6_A_Credits" class="form-control" /></td>
+                    <td><input type="text" id="Player6_B_Name" class="form-control" /></td>
+                    <td>
+                        <select id="Player6_B_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player6_B_Credits" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td>Player 7</td>
+                    <td><input type="text" id="Player7_A_Name" class="form-control" /></td>
+                    <td>
+                        <Select id="Player7_A_Type" class="custom-select">
+                            <option value="0">Select</option>custom-select
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </Select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player7_A_Credits" class="form-control" /></td>
+                    <td><input type="text" id="Player7_B_Name" class="form-control" /></td>
+                    <td>
+                        <select id="Player7_B_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player7_B_Credits" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td>Player 8</td>
+                    <td><input type="text" id="Player8_A_Name" class="form-control" /></td>
+                    <td>
+                        <select id="Player8_A_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player8_A_Credits" class="form-control" /></td>
+                    <td><input type="text" id="Player8_B_Name" class="form-control" /></td>
+                    <td>
+                        <select id="Player8_B_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player8_B_Credits" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td>Player 9</td>
+                    <td><input type="text" id="Player9_A_Name" class="form-control" /></td>
+                    <td>
+                        <select id="Player9_A_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player9_A_Credits" class="form-control" /></td>
+                    <td><input type="text" id="Player9_B_Name" class="form-control" /></td>
+                    <td>
+                        <select id="Player9_B_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player9_B_Credits" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td>Player 10</td>
+                    <td><input type="text" id="Player10_A_Name" class="form-control" /></td>
+                    <td>
+                        <select id="Player10_A_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player10_A_Credits" class="form-control" /></td>
+                    <td><input type="text" id="Player10_B_Name" class="form-control" /></td>
+                    <td>
+                        <select id="Player10_B_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player10_B_Credits" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td>Player 11</td>
+                    <td><input type="text" id="Player11_A_Name" class="form-control" /></td>
+                    <td>
+                        <select id="Player11_A_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player11_A_Credits" class="form-control" /></td>
+                    <td><input type="text" id="Player11_B_Name" class="form-control" /></td>
+                    <td>
+                        <select id="Player11_B_Type" class="custom-select">
+                            <option value="0">Select</option>
+                            <option value="1">Wicket Keeper</option>
+                            <option value="2">Batsmen</option>
+                            <option value="3">Allrounder</option>
+                            <option value="4">Bowler</option>
+                        </select>
+                    </td>
+                    <td><input type="number" min="5" max="10" step="0.5" id="Player11_B_Credits" class="form-control" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="text-center" style="margin-top:10px;margin-bottom:20px;">
+            <button class="btn-primary" style="width:120px;padding:5px;" id="submitdata">Submit</button>
+        </div>
+        <div class="card">
+            <h5 class="card-header">Selected Players</h5>
+        </div>
+        <table class="table table-bordered" id="resulttable">
+        </table>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#submitdata").click(function () {
+            var list = [];
+            $('#contenttable > tbody  > tr').each(function (i, tr) {
+                var singleObj = {};
+                var playernameA = '#Player' + (i + 1) + '_A_Name';
+                var playertypeA = '#Player' + (i + 1) + '_A_Type';
+                var playercreditA = '#Player' + (i + 1) + '_A_Credits';
+                var playernameB = '#Player' + (i + 1) + '_B_Name';
+                var playertypeB = '#Player' + (i + 1) + '_B_Type';
+                var playercreditB = '#Player' + (i + 1) + '_B_Credits';
+
+                singleObj['PlayerNo'] = i + 1;
+                singleObj['PlayerNameA'] = $(tr).find(playernameA).val();
+                singleObj['PlayerTypeA'] = $(tr).find(playertypeA).val();
+                singleObj['PlayerCreditA'] = $(tr).find(playercreditA).val();
+                singleObj['PlayerNameB'] = $(tr).find(playernameB).val();
+                singleObj['PlayerTypeB'] = $(tr).find(playertypeB).val();
+                singleObj['PlayerCreditB'] = $(tr).find(playercreditB).val();
+
+                list.push(singleObj);
+            });
+
+            list = JSON.stringify(list);
+
+            $.ajax({
+                url: '/Home/PostedData',
+                type: 'POST',
+                dataType: 'text',
+                data: { playerList: list },
+                success: function (result) {
+                    /*console.log(result);*/
+                    var resultdata = JSON.parse(result);
+
+                    $('#resulttable').empty();
+
+                    var data = '<thead>'+
+                                    '<tr>'+
+                                        '<th>Player Name</th>' +
+                                        '<th>Team Name</th>' +
+                                        '<th>Player Credits</th>' +
+                                        '<th>Player Type</th>' +
+                                    '</tr>' +
+                                '</thead>' +
+                                '<tbody>'
+                    $.each(resultdata, function (index, value) {
+                        if (value.PlayerDesignation == 1) {
+                            data = data + '<tr>' +
+                                '<td>' + value.PlayerName + ' ' + '<i class="captainvicecaptain">C</i>' + '</td>' +
+                                '<td>' + value.TeamName + '</td>' +
+                                '<td>' + value.PlayerCredits + '</td>' +
+                                '<td>' + value.PlayerType + '</td>' +
+                                '</tr>'
+                        }
+                        else if (value.PlayerDesignation == 2) {
+                            data = data + '<tr>' +
+                                '<td>' + value.PlayerName + ' ' + '<i class="captainvicecaptain">VC</i>' + '</td>' +
+                                '<td>' + value.TeamName + '</td>' +
+                                '<td>' + value.PlayerCredits + '</td>' +
+                                '<td>' + value.PlayerType + '</td>' +
+                                '</tr>'
+                        }
+                        else {
+                            data = data + '<tr>' +
+                                '<td>' + value.PlayerName + '</td>' +
+                                '<td>' + value.TeamName + '</td>' +
+                                '<td>' + value.PlayerCredits + '</td>' +
+                                '<td>' + value.PlayerType + '</td>' +
+                                '</tr>'
+                        }
+                        
+                    });
+
+                    data = data + '</tbody>'
+
+                    $('#resulttable').append(data);
+                }
+            })
+        })
+    })
+</script>
