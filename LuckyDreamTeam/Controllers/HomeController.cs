@@ -180,7 +180,7 @@ namespace LuckyDreamTeam.Controllers
 
                 countOfOneTeam = OutputPlayers.Where(x => x.TeamName == TeamNames.TeamA.ToString()).Count();
                 totalCredits = OutputPlayers.Select(x => x.PlayerCredits ?? 0).Sum();
-            } while (countOfOneTeam <= (totalCount-maxPlayerPerTeam) || countOfOneTeam >= maxPlayerPerTeam || totalCredits > maxCredit);
+            } while (countOfOneTeam <= (totalCount-maxPlayerPerTeam) || countOfOneTeam > maxPlayerPerTeam || totalCredits > maxCredit);
 
             int? indexCaptain = null;
             int indexViceCaptain = 0;
